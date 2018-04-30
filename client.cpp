@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
    
    }
 
-   //Create the message queue
+   //Connect to the message queue
    key = ftok(".", 'q');
    if( (qid = msgget(key, 0)) == -1) {
       perror("Failed to get message queue");
